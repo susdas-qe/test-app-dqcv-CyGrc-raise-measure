@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: maven-hello-world-ytvj
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas_quay_org/build-e2e-olfe-tenant/test-app-dqcv/maven-hello-world-ytvj@sha256:eb2451dcac3b1e6d54caeb3bb39aa62eac9b55ecd08e2d7278559a236cf4628d
+        name: my-java-quarkus
+        resources: {}
+status: {}

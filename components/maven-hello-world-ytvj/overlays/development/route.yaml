@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: maven-hello-world-ytvj
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: maven-hello-world-ytvj
+    app.kubernetes.io/part-of: test-app-dqcv
+  name: maven-hello-world-ytvjki1o
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: maven-hello-world-ytvj
+    weight: null
+status: {}
