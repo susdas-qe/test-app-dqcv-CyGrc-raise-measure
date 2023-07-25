@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-b6yh
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas_quay_org/build-e2e-olfe-tenant/test-app-dqcv/devfile-sample-python-basic-b6yh@sha256:aff4385f35fe3770faf1aa8aea5c2e47591de8134b96afb54bfd1602b7efc62c
+        name: my-python
+        resources: {}
+status: {}
